@@ -16,19 +16,53 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   bottom: 0;
   height: inherit;
 }
+.MuiDivider-root {
+  border: none;
+  height: 1px;
+  margin: 0;
+  flex-shrink: 0;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.MuiDivider-absolute {
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+.MuiDivider-inset {
+  margin-left: 72px;
+}
+.MuiDivider-light {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.MuiDivider-middle {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.MuiDivider-vertical {
+  width: 1px;
+  height: 100%;
+}
 </style>
 <body>
 
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Updates</a>
-    <a href="https://github.com/Lincoln-LM/" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Github</a>
-    <a href="/projects" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projects</a>
-    <a href="/Tools" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Tool Downloads</a>
-    <a href="/JS-Finder" class="w3-bar-item w3-button w3-hide-small w3-hover-white">JS-Finder</a>
+    <a class="w3-bar-item w3-button w3-left w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <b class="w3-bar-item w3-left w3-hide-large w3-large w3-theme-l1">Lincoln's RNG Site</b>
   </div>
 </div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a class="w3-bar-item w3-button" href="https://lincoln-lm.github.io/">Home</a>
+  <a class="w3-bar-item w3-button" href="https://github.com/Lincoln-LM/">Github</a>
+  <hr class="MuiDivider-root">
+  <a class="w3-bar-item w3-button" href="https://lincoln-lm.github.io/Tools">Tools</a>
+  <a class="w3-bar-item w3-button" href="https://lincoln-lm.github.io/Guides">Tool Guides</a>
+  <a class="w3-bar-item w3-button" href="https://lincoln-lm.github.io/JS-FInder">JS Finder</a>
+</nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
@@ -38,38 +72,20 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
   <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal"></h1>
-      <p></p>
+      <h1 class="w3-text-teal">My Github RNG Site</h1>
+      <p>This is just a simple site to post info about various stuff im working on, links to download my tools, and guides to use those tools.</p>
     </div>
     <div class="w3-third w3-container">
     </div>
   </div>
-
-  <div class="w3-row">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal"></h1>
-      <p></p>
-    </div>
-    <div class="w3-third w3-container">
-    </div>
-  </div>
-
-  <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal"></h1>
-      <p></p>
-    </div>
-    <div class="w3-third w3-container">
-    </div>
-  </div>
-
+  
   <footer id="myFooter">
     <div class="w3-container w3-theme-l2 w3-padding-32">
       <h4></h4>
     </div>
 
     <div class="w3-container w3-theme-l1">
-      <p><a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+      <p></p>
     </div>
   </footer>
 
